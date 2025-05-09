@@ -1,0 +1,44 @@
+/* index.css */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Responsive video grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Sidebar responsive */
+.sidebar {
+  width: 200px;
+  padding: 1rem;
+  background: #f2f2f2;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Topbar */
+.topbar {
+  height: 60px;
+  background: #ddd;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.topbar input {
+  padding: 0.5rem;
+  width: 200px;
+  max-width: 100%;
+}

@@ -1,0 +1,93 @@
+/** 
+ * This file defines the core theme variables. Darj mode only because :
+ * - Reduced eye strain
+ * - High contrast readability
+ * - Modern aesthetic
+ * 
+ */
+
+:root {
+  /* Background Colors */
+  --bg-primary: #0f0f0f;     /* Main background */
+  --bg-secondary: #1f1f1f;   /* Elements, cards, sidebars */
+  --bg-hover: #272727;       /* Hover states */
+
+  /* Text Colors */
+  --text-primary: #fff;      /* Main text */
+  --text-secondary: #aaa;    /* Secondary text, subtitles */
+
+  /* Brand Colors */
+  --accent-color: #8c52ff;   /* Primary brand color */
+  --accent-hover: #9d6fff;   /* Hover state for accent */
+
+  /* Utility Colors */
+  --border-color: #333;      /* Borders, dividers */
+  --danger: #ff4444;         /* Error states, delete actions */
+  --success: #44ff44;        /* Success states */
+
+  /* Transparent versions for overlays */
+  --accent-color-transparent: rgba(140, 82, 255, 0.1);
+  --error-bg: rgba(255, 68, 68, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--bg-hover);
+}
+
+input, textarea {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.error {
+  color: var(--danger);
+  margin: 4px 0;
+}
+
+.success {
+  color: var(--success);
+  margin: 4px 0;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "youtube-capstone",
+  "version": "1.0.0",
+  "description": "A full-stack video sharing platform with a modern dark theme interface, built with the MERN stack (MongoDB, Express.js, React, Node.js).",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "install-all": "concurrently \"cd client && npm install\" \"cd server && npm install\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.10"
+  }
+}
